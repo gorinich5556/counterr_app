@@ -19,13 +19,9 @@ Window.clearcolor = (255, 255, 255, 1)
 class MyWidget(FloatLayout):
     pass
 
-class FreBall(Widget):
-    pass
-
 class MyApp(App):
     def build(self):
         return MyWidget()
-        return FreBall()
 
         
 
