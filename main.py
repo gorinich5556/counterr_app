@@ -1,3 +1,4 @@
+from tkinter import Widget
 from kivy.config import Config
 
 Config.set('graphics', 'width', 720) 
@@ -17,9 +18,14 @@ Window.clearcolor = (255, 255, 255, 1)
 
 class MyWidget(FloatLayout):
     pass
+
+class FreBall(Widget):
+    pass
+
 class MyApp(App):
     def build(self):
         return MyWidget()
+        return FreBall()
 
         
 

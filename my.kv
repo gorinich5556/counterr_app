@@ -6,23 +6,24 @@ MyWidget:
     FloatLayout:
         Button:
             size_hint : .505 , .10
-            pos : 361 , 960
+            pos_hint : {'x' : 0.5 ,'y' :  0.910}
             background_color : 1, 245, 231, 1
             text : '+'
             color : 9, 157, 186, 1
             font_size : 128
         Button:
             size_hint : .505 , .10
-            pos : -1,960
+            pos_hint : {'x' : 0 ,'y' :  0.910}
             font_size : 124
             background_color : 1, 245, 231, 1
+            on_press :
             Image:
                 source :'1093271_red.png'
                 size : 80, 80
                 pos : 150 , 970
         Label:
             text : 'ласкаво просимо в '
-            pos : 170 ,870
+            pos_hint : {'x' : 0.240 ,'y' :  0.830}
             size_hint : .505 , .10
             disabled_color : 0,0,0,0
             color : 9, 157, 186, 1
@@ -30,7 +31,7 @@ MyWidget:
             font_size : 52
         Label:
             text : 'сountererg'
-            pos : 170 ,800
+            pos_hint : {'x' : 0.240 ,'y' :  0.750}
             size_hint : .505 , .10
             disabled_color : 0,0,0,0
             color : 9, 157, 186, 1
@@ -38,7 +39,7 @@ MyWidget:
             font_size : 102
         Label:
             text : 'тут ви можете:'
-            pos : 170 ,700
+            pos_hint : {'x' : 0.240 ,'y' :  0.670}
             size_hint : .505 , .10
             disabled_color : 0,0,0,0
             color : 9, 157, 186, 1
@@ -56,3 +57,14 @@ MyWidget:
             source : './img/counter_img.png'
             size_hint : .905 , .654
             pos_hint : {'x' : 0.05 ,'y' :  .180}
+
+<FreeBall>:
+
+    size_hint: [.1, .1] #получается не круг, а овал, т.к. ширина и длина у экрана разные
+    pos_hint: {"x": .0, "y": .0}
+    canvas:
+        Color:
+            rgb: 1, 245, 231
+        Ellipse:
+            pos: 0, 0
+            size: 10, 10
