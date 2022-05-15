@@ -4,124 +4,157 @@ MyWidget:
 
 <MyWidget>:
     ScrollView:
-        do_scroll_x: False
-        do_scroll_y: True
-        effect_cls: 'ScrollEffect'
-        always_overscroll: True
-        bar_width: 10
-        FloatLayout:
-            size_hint_y: None
-            size_hint_y: 1.0000001
-            Button:
-                size_hint : .505 , .10
-                pos_hint : {'x' : 0.5 ,'y' :  0.910}
-                background_color : 1, 245, 231, 1
-                text : '+'
-                color : 9, 157, 186, 1
-                font_size : 128
-            Button:
-                size_hint : .505 , .10
-                pos_hint : {'x' : 0 ,'y' :  0.910}
-                font_size : 124
-                background_color : 1, 245, 231, 1
-                on_press :
-                Image:
-                    source :'1093271_red.png'
-                    size : 80, 80
-                    pos : 150 , 970
+        do_scroll_x:True
+        do_scroll_y:True
+        effect_cls:'ScrollEffect'
+        RelativeLayout:
+            size_hint: 1, 2
+            AnchorLayout:
+                anchor_x: "center"
+                anchor_y: "top"
+                BoxLayout:
+                    size_hint: 1, .05
+                    spacing: 0.0
+                    Button:
+                        font_size : 124
+                        background_color : 1, 245, 231, 1
+                        FloatLayout:
+                            Image:
+                                source :'1093271_red.png'
+                                size : 40, 40
+                                pos : 150 , 2015
+                                heigh: dp(80)
+                    Button:
+                        background_color : 1, 245, 231, 1
+                        text : '+'
+                        color : 9, 157, 186, 1
+                        font_size : 128
+                        pos_hint : { 'x': 0 , 'top':1}
             Label:
                 text : 'ласкаво просимо в '
+                pos_hint : {'x' : 0.240 ,'y' :  0.870}
+                size_hint : .505 , .10
+                disabled_color : 0,0,0,0
+                color : 9, 157, 186, 1
+                font_name : 'Nunito-VariableFont_wght.ttf'
+                font_size : 52
+                heigh: dp(10)
+            Label:
+                text : 'сountererg'
                 pos_hint : {'x' : 0.240 ,'y' :  0.830}
                 size_hint : .505 , .10
                 disabled_color : 0,0,0,0
                 color : 9, 157, 186, 1
                 font_name : 'Nunito-VariableFont_wght.ttf'
-                font_size : 52
-            Label:
-                text : 'сountererg'
-                pos_hint : {'x' : 0.240 ,'y' :  0.750}
-                size_hint : .505 , .10
-                disabled_color : 0,0,0,0
-                color : 9, 157, 186, 1
-                font_name : 'Nunito-VariableFont_wght.ttf'
                 font_size : 102
+                heigh: dp(10)
             Label:
                 text : 'тут ви можете:'
-                pos_hint : {'x' : 0.240 ,'y' :  0.670}
+                pos_hint : {'x' : 0.240 ,'y' :  0.770}
                 size_hint : .505 , .10
                 disabled_color : 0,0,0,0
                 color : 9, 157, 186, 1
                 font_name : 'Nunito-VariableFont_wght.ttf'
                 font_size : 72
+                heigh: dp(10)
             Label:
                 text : 'створювати лічильники'
-                pos_hint : {'x' : 0.25 ,'y' :  0.600}
+                pos_hint : {'x' : 0.25 ,'y' :  0.740}
                 size_hint : .505 , .10
                 disabled_color : 0,0,0,0
                 color : 9, 157, 186, 1
                 font_size : 52
+                heigh: dp(10)
             Image:
                 source : './img/counter_img.png'
-                size_hint : .905 , .654
-                pos_hint : {'x' : 0.05 ,'y' :  .180}
+                pos_hint : {'x' : 0 ,'y' :  .22}
                 heigh: dp(654)
-                width: dp(906)
+                width: dp(905)
             
             Image:
                 source : './img/blue_ball.png'
                 size_hint : 0.03 , 0.03
-                pos_hint : {'x' : 0.2 ,'y' :  0.35}
+                pos_hint : {'x' : 0.2 ,'y' :  0.63}
+                heigh: dp(3)
             Image:
                 source : './img/blue_ball.png'
                 size_hint : 0.03 , 0.03
-                pos_hint : {'x' : 0.2 ,'y' :  0.25}
+                pos_hint : {'x' : 0.2 ,'y' :  0.6}
+                heigh: dp(3)
             Label:
                 text : 'секундоміри'
                 disabled_color : 0,0,0,0
                 color : 9, 157, 186, 1
                 font_size : 48
                 size_hint : .50 , .100
-                pos_hint : {'x' : 0.22 ,'y' :  0.318}
+                pos_hint : {'x' : 0.19 ,'y' :  0.568}
                 font_name : 'Nunito-VariableFont_wght.ttf'
+                heigh: dp(100)
             Label:
                 text : 'рахувальні'
                 disabled_color : 0,0,0,0
                 color : 9, 157, 186, 1
                 font_size : 48
                 size_hint : .50 , .100
-                pos_hint : {'x' : 0.2 ,'y' :  0.218}
+                pos_hint : {'x' : 0.17 ,'y' :  0.598}
                 font_name : 'Nunito-VariableFont_wght.ttf'
+                heigh: dp(100)
             Label:
                 text : 'налаштовувати їх'
-                pos_hint : {'x' : 0.25 ,'y' :  0.140}
+                pos_hint : {'x' : 0.25 ,'y' :  0.490}
                 size_hint : .505 , .10
                 disabled_color : 0,0,0,0
                 color : 9, 157, 186, 1
                 font_size : 52
+                heigh: dp(10)
             Image:
                 source : './img/gear.png'
-                size_hint : 1 , 1
-                pos_hint : {'x' : 0 ,'y' :  -0.5}
+                pos_hint : {'x' : 0 ,'y' :  -0.05}
+                heigh: dp(1)
+                width: dp(1)
             Image:
                 source : './img/blue_ball.png'
                 size_hint : 0.03 , 0.03
-                pos_hint : {'x' : 0.2 ,'y' :  -0.19}
+                pos_hint : {'x' : 0.2 ,'y' :  0.36}
+                heigh: dp(3)
             Image:
                 source : './img/blue_ball.png'
                 size_hint : 0.03 , 0.03
-                pos_hint : {'x' : 0.2 ,'y' :  0.25}
+                pos_hint : {'x' : 0.2 ,'y' :  0.285}
+                heigh: dp(3)
             Image:
                 source : './img/blue_ball.png'
                 size_hint : 0.03 , 0.03
-                pos_hint : {'x' : 0.2 ,'y' :  0.25}
+                pos_hint : {'x' : 0.2 ,'y' :  0.18}
+                heigh: dp(3)
+
             Label:
-                text : 'виставляти\n максимальне'
+                text : 'виставляти\nмаксимальне'
                 disabled_color : 0,0,0,0
                 color : 9, 157, 186, 1
                 font_size : 48
                 size_hint : .50 , .100
-                pos_hint : {'x' : 0.22 ,'y' :  -0.198}
+                pos_hint : {'x' : 0.22 ,'y' :  0.31}
                 font_name : 'Nunito-VariableFont_wght.ttf'
+                heigh: dp(100)
+            Label:
+                text : 'пероходити до іншого\nзначення коли перше\nприйшло до піку'
+                disabled_color : 0,0,0,0
+                color : 9, 157, 186, 1
+                font_size : 48
+                size_hint : .50 , .100
+                pos_hint : {'x' : 0.33 ,'y' :  0.22}
+                font_name : 'Nunito-VariableFont_wght.ttf'
+                heigh: dp(100)
+            Label:
+                text : 'багато іншого'
+                disabled_color : 0,0,0,0
+                color : 9, 157, 186, 1
+                font_size : 48
+                size_hint : .50 , .100
+                pos_hint : {'x' : 0.22 ,'y' :  0.148}
+                font_name : 'Nunito-VariableFont_wght.ttf'
+                heigh: dp(100)
 
 
         
