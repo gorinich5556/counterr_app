@@ -23,7 +23,7 @@ class MyApp(App):
     def build(self):
         return MyWidget()
 
-ghfgh = 12
+ghfgh = 11
 
         
 
