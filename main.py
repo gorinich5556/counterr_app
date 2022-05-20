@@ -6,5 +6,5 @@ class MainApp(MDApp):
     def build(self):
         return MDLabel(text="Hello, World", halign="center")
 
-
+g = 0
 MainApp().run()
