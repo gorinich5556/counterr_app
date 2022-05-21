@@ -17,7 +17,7 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
-          workdir: G:\egor\counter_appkivy_version\buildozer-64bit.spec
+          workdir: counter_appkivy_version\buildozer-64bit.spec
           buildozer_version: stable
 
       - name: Upload artifacts
