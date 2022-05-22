@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="image-loading1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.github/workflows/myapp/venv/Lib/site-packages/kivy/data/images/image-loading.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
