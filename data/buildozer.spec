@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = RuBo
 
 # (str) Package name
-package.name = myapp
+package.name = rubo
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.gorinich5556
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -37,20 +37,20 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3,kivy==2.0.0,kivymd,https://github.com/kivymd/KivyMD/archive/3274d62.zip,sdl2_ttf==2.0.15
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
+presplash.filename = %(source.dir)s/data/logo/presplash512okmin.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/data/logo/logo512min.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = portrait
+orientation = all
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -66,7 +66,7 @@ orientation = portrait
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.0.0
 
 #
 # Android specific
@@ -262,7 +262,7 @@ fullscreen = 0
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = arm64-v8a, armeabi-v7a
+android.arch = arm64-v8a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
