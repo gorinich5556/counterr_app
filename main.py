@@ -1,10 +1,8 @@
-from kivy.app import App
-from kivy.uix.label import Label
+from kivymd.app import MDApp
+from kivy.lang import Builder
 
 
-class MainApp(App):
+class MainApp(MDApp):
     def build(self):
-        return Label(text="Hello, World", halign="center")
-
-g = 2
+        return Builder.load_file('app.kv')
 MainApp().run()
