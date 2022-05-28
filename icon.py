@@ -6,7 +6,7 @@ from kivymd.icon_definitions import md_icons
 from kivymd.app import MDApp
 from kivymd.uix.list import OneLineIconListItem
 
-# get icon account-circle-outlin, plus
+# get icon account-circle-outline, plus
 
 Builder.load_string(
     '''

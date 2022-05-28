@@ -1,6 +1,26 @@
 # kivymd `2.0.0`
 
 
-MDLabel:
-    text: "text"
-    
+MDBoxLayout:
+    orientation: "vertical"
+
+    MDTabs:
+        id: tabs
+        on_tab_switch: app.on_tab_switch(*args)
+        background_color: .0, .96, .91, 1
+        tab_hint_x: True
+        underline_color: .0, .96, .91, 1
+        text_color_normal: 1, 0, 0 ,1
+        text_color_active: 1, 0, 0 ,1
+
+
+
+<Tab>
+
+    MDIconButton:
+        id: icon
+        icon: root.icon
+        user_font_size: "48sp"
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+
